@@ -23,7 +23,7 @@ resource "azurerm_storage_account" "storage_account" {
     }    
   }
 
-  enable_https_traffic_only = false
+  enable_https_traffic_only = true
 
   identity {
     type = "SystemAssigned"
