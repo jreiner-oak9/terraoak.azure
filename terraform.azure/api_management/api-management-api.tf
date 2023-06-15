@@ -4,5 +4,5 @@ resource "azurerm_api_management_api" "sac_api_management_api" {
   api_management_name = azurerm_api_management.sac_api_management.name   
   revision = "1"  
   display_name = "ac-testing-apim-api"
-  protocols = ["http"]
+  protocols = ["http"] # oak9: protocols should be set to any of {'https', 'wss'}
 }
